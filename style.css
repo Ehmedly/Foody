@@ -1,0 +1,138 @@
+/*HEADER STYLES*/
+.container {
+  width: 73vw;
+  margin: 0 auto;
+}
+header {
+  background: linear-gradient(to right, #00000042, #00000042), url(./images/hero_1.jpg.webp)center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 75%, 0 100%, 0% 50%);
+  height: 96vh;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+header nav ul a {
+  font: 450 16px "Open Sans";
+  text-transform: capitalize;
+  color: white;
+  transition: .4s;
+}
+
+header nav ul a:hover {
+  color: #ff7404;
+  cursor: pointer;
+}
+
+.foody-link {
+  font: 800 32px "Open Sans";
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.contact-us-link {
+  font: 14px "Open Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff7404;
+  padding: 12px 20px;
+  transition: .4s;
+}
+
+.contact-us-link:hover {
+  color: #ff7404;
+  background-color: #fff;
+}
+
+.header-content-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  max-width: 60%;
+}
+
+.header-content-div h1 {
+  font: 800 80px "Open Sans";
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.header-content-div p {
+  font: 300 20px "Open Sans";
+  color: #ffffffe6;
+  text-align: center;
+}
+
+.header-content-div a {
+  font: 350 16px "Open Sans";
+  color: #ffffffe6;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border: 2px solid white;
+  margin-top: 50px;
+  transition: .4s;
+}
+
+.header-content-div a:hover {
+  background: white;
+  color: #000;
+}
+
+/*SECTION 2 STYLES*/
+
+.section2-bg-div {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  background: #eee;
+}
+
+i {
+  font-size: 26px;
+  background-color: #ff7404;
+  padding: 24px 26px;
+  border-radius: 100px;
+  color: white;
+}
+.section2-cards-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section2-card-div h2{
+  font: 500 16px "Open Sans";
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ff7404;
+  margin: 30px 0 12px 0;
+}
+.section2-card-div p{
+  font: 400 15px "Open Sans";
+  line-height: 1.8;
+  color: #868e96;
+}
