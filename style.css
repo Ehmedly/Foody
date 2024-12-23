@@ -5,7 +5,7 @@
 }
 header {
   background: linear-gradient(to right, #00000042, #00000042), url(./images/hero_1.jpg.webp)center/cover;
-  height: 96vh;
+  height: 100vh;
 }
 
 header .container {
@@ -112,7 +112,7 @@ header nav ul a:hover {
   background: #eee;
 }
 
-i {
+.section2-bg-div i {
   font-size: 26px;
   background-color: #ff7404;
   padding: 24px 26px;
@@ -181,7 +181,7 @@ i {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px 35px;
   justify-content: center;
   margin-top: 50px;
 }
@@ -209,7 +209,7 @@ i {
 /*SECTION 5 STYLES*/
 .section5-bg-div {
   height:180vh;
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+  clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0% calc(100%));
   background: #eee;
 }
 .section5-bg-div .container{
@@ -263,46 +263,143 @@ i {
 
 /*SECTION 6 STYLES*/
 .section6-bg-div{
-  height: 80vh;
+  height: 73vh;
   display: flex;
   align-items: center;
 }
 .section6-bg-div .container{
   display: flex;
   flex-direction: column;
-  height: 100%;
   flex-direction: column;
   align-items: center;
 }
 .section6-bg-div .container p{
-  padding-top: 150px;
+  padding-top: 100px;
   max-width: 650px;
   text-align: left;
   font: 400 20px "Open Sans";
   line-height: 1.8;
+  /*text-align: center;*/
 }
 
 /*SECTION 7 STYLES*/
 .section7-bg-div{
-  height: 100vh;
+  height: 130vh;
   display: flex;
   align-items: center;
+  clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0% calc(100%));
+  background: #eee;
+}
+.section7-bg-div hr{
+  margin-top: 40px;
 }
 .section7-bg-div .container{
-  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-}
-.section7-bg-div .container img{
-  margin-top: 120px;
-  width: 550px;
-  height: 300px;
-  object-fit: cover;
 }
 .section7-bg-div .container .cards-div{
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+.section7-bg-div .container .card-div{
+  margin-top: 70px;
+  width: 540px;
+  background-color: #fff;
+  box-shadow: 0 0 22px -15px rgb(0, 0, 0);
+}
+.section7-bg-div .container img{
+  width: 540px;
+  height: 300px;
+  object-fit: cover;
+}
+.section7-bg-div .card-div div{
+  padding: 0 30px 30px 30px;
+}
+.section7-bg-div .card-div h4{
+  font: 20px "Open Sans";
+  color: #ff7404;
+  text-transform: capitalize;
+  margin: 25px 0 10px 0;
+  width: fit-content;
+  transition:.4s;
+  &:hover{
+    cursor: pointer;
+    color: #8f4102;
+  }
+}
+.section7-bg-div .card-div span{
+  font: 400 13px "Open Sans";
+  color: #999;
+  text-transform: capitalize;
+}
+.section7-bg-div .card-div i{
+  margin-right: 3px;
+  color:#999;
+}
+.section7-bg-div .card-div p{
+  font: 400 15px "Open Sans";
+  margin: 25px 0 20px 0;
+  color: #868e96;
+  line-height: 1.8;
+}
+.section7-bg-div .card-div a{
+  font: 400 12px "Open Sans";
+  background-color: #ff7404;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 8px 20px;
+  transition: .4s;
+  &:hover{
+    opacity: 0.7;
+  }
+}
 
+/*SECTION 8 STYLES*/
+.section8-bg-div{
+  height: 30vh;
+}
+.section8-bg-div .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.section8-bg-div h5{
+  font: bold 16px "Open Sans";
+  text-transform: capitalize;
+}
+.section8-bg-div p{
+  font: 400 15px "Open Sans";
+  max-width: 500px;
+  color: #868e96;
+  text-align: center;
+}
+.section8-bg-div .container div{
+  display: flex;
+  gap: 35px;
+}
+
+.section8-bg-div input{
+  outline-color: #ff7404;
+  padding: 12px 20px;
+  border:1px solid;
+  border-color: #868e9675;
+  width: 300px;
+  
+}
+.section8-bg-div input::placeholder{
+  text-transform: capitalize;
+  font: 400 16px "Open Sans";
+}
+.section8-bg-div a{
+  font: 400 12px "Open Sans";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 35px;
+  color: white;
+  background-color: #ff7404;
 }
