@@ -290,13 +290,17 @@ header nav ul a:hover {
   clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0% calc(100%));
   background: #eee;
 }
-.section7-bg-div hr{
-  margin-top: 40px;
-}
 .section7-bg-div .container{
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 100px;
+}
+.section7-hr-title-div{
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
 }
 .section7-bg-div .container .cards-div{
   width: 100%;
@@ -304,7 +308,6 @@ header nav ul a:hover {
   justify-content: space-between;
 }
 .section7-bg-div .container .card-div{
-  margin-top: 70px;
   width: 540px;
   background-color: #fff;
   box-shadow: 0 0 22px -15px rgb(0, 0, 0);
@@ -402,4 +405,78 @@ header nav ul a:hover {
   padding: 15px 35px;
   color: white;
   background-color: #ff7404;
+}
+
+/*FOOTER STYLES*/
+
+footer{
+  height: 75vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+footer .container{
+  display: flex;
+  gap: 170px;
+}
+footer .container .first_two_cols_div{
+  display: flex;
+  gap: 50px;
+}
+.social_icons_div{
+  margin-top: 60px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  max-width: 150px;
+}
+.social_icons_div i{
+  color: #ff7404;
+  transition: .4s;
+  &:hover{
+    color: #994703;
+  }
+}
+footer h5{
+  font: bold 17px "Open Sans";
+  text-transform: capitalize;
+  margin-bottom: 25px;
+}
+footer h6{
+  font: 400 16px "Open Sans";
+  text-transform: capitalize;
+}
+footer span{
+  font: 400 16px "Open Sans";
+  color: #868e96;
+  line-height: 1.8;
+}
+.col_1{
+  max-width: 350px;
+}
+.col_2 div{
+  margin-bottom:50px;
+}
+.col_3 a{
+  font: 400 16px "Open Sans";
+  color: #ff7404;
+  text-transform: capitalize;
+  transition: .4s;
+  &:hover{
+    color: #853c01;
+  }
+}
+.col_3 li{
+  margin-bottom: 15px;
+}
+.copy-right {
+  margin: auto;
+  color: #868e96;
+}
+.copy-right a{
+  color: #ff7404;
+  transition: 0.4s;
+  &:hover{
+    color: black;
+  }
 }
