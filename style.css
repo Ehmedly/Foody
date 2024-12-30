@@ -3,6 +3,7 @@
   width: 73vw;
   margin: 0 auto;
 }
+
 header {
   background: linear-gradient(to right, #00000042, #00000042), url(./images/hero_1.jpg.webp)center/cover;
   height: 100vh;
@@ -67,7 +68,7 @@ header nav ul a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 60%;
   max-width: 60%;
 }
 
@@ -104,8 +105,8 @@ header nav ul a:hover {
 /*SECTION 2 STYLES*/
 
 .section2-bg-div {
-  margin-top:-190px;
-  clip-path: polygon(0 22%, 100% 0, 100% 78%, 0% 100%);
+  margin-top: -10%;
+  clip-path: polygon(0 120px, 100% 0, 100% calc(100% - 120px), 0% 100%);
   height: 80vh;
   display: flex;
   align-items: center;
@@ -119,12 +120,14 @@ header nav ul a:hover {
   border-radius: 100px;
   color: white;
 }
-.section2-cards-div{
+
+.section2-cards-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.section2-card-div h2{
+
+.section2-card-div h2 {
   font: 500 16px "Open Sans";
   line-height: 1.2;
   letter-spacing: 2px;
@@ -132,52 +135,57 @@ header nav ul a:hover {
   color: #ff7404;
   margin: 30px 0 12px 0;
 }
-.section2-card-div p{
+
+.section2-card-div p {
   font: 400 15px "Open Sans";
   line-height: 1.8;
   color: #868e96;
 }
 
 /*SECTION 3*/
-.section3-bg-div{
-  height:100vh;
+.section3-bg-div {
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.section3-bg-div .container{
+
+.section3-bg-div .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .section3-bg-div .container hr,
 .section4-bg-div hr,
 .section5-bg-div hr,
 .section6-bg-div hr,
-.section7-bg-div hr
-{
+.section7-bg-div hr {
   border: 2px solid #ff8c2e;
   width: 80px;
   margin: 15px;
 }
+
 .section3-bg-div .container h2,
 .section4-bg-div h2,
 .section5-bg-div h2,
 .section6-bg-div h2,
-.section7-bg-div h2{
+.section7-bg-div h2 {
   font: 800 50px "Open Sans";
   text-transform: uppercase;
   padding: 10px 0;
 }
-.section3-bg-div .container p{
+
+.section3-bg-div .container p {
   font: 350 15px "Open Sans";
   line-height: 1.8;
   color: #868e96;
   text-align: center;
   max-width: 650px;
 }
-.section3-images-div{
-  height:70vh;
+
+.section3-images-div {
+  height: 70vh;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -185,75 +193,147 @@ header nav ul a:hover {
   justify-content: center;
   margin-top: 50px;
 }
-.section3-bg-div img{
+
+.section3-bg-div img {
   max-width: 350px;
 }
 
 /*SECTION 4 STYLES*/
-.section4-bg-div{
+.section4-bg-div {
   height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.section4-images-div{
+
+.section4-images-div {
+  width: 100%;
   display: flex;
-  gap: 35px;
-  margin-top: 60px;
+  justify-content: space-between;
+  margin-top: 40px;
 }
-.section4-images-div img{
-  width: 480px;
+
+.section4-image-div {
+  position: relative;
+  color: black;
+  overflow: hidden;
+  height: fit-content;
+
+  &:hover .section4-food-img {
+    scale: 1.1;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .price-name-div span {
+    background-color: transparent;
+    border-color: white;
+  }
+}
+
+.section4-image-div .price-name-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section4-image-div .price-name-div span {
+  font: 700 20px "Open Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #ff7404;
+  border: 2px solid #ff7404;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: .4s;
+}
+
+.section4-image-div .price-name-div h3 {
+  margin-top: 15px;
+  color: white;
+  font: 700 30px "Open Sans";
+  text-transform: uppercase;
+}
+
+.section4-images-div img {
+  transition: .5s;
+  width: 487px;
+  object-fit: cover;
 }
 
 /*SECTION 5 STYLES*/
 .section5-bg-div {
-  height:180vh;
+  height: 180vh;
   clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0% calc(100%));
   background: #eee;
 }
-.section5-bg-div .container{
+
+.section5-bg-div .container {
   height: 100%;
 }
-.section5-bg-div hr{
-  margin-top:120px;
+
+.section5-bg-div hr {
+  margin-top: 120px;
 }
-.section5-bg-div .container{
+
+.section5-bg-div .container {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.section5-bg-div .content-div h3{
+
+.section5-bg-div .content-div h3 {
   font: 450 20px "Open sans";
 }
-.section5-bg-div .content-div p{
+
+.section5-bg-div .content-div p {
   font: 350 15px "Open sans";
   line-height: 1.8;
   color: #868e96;
   margin: 10px 0;
 }
-.section5-bg-div .content-div span{
+
+.section5-bg-div .content-div span {
   font: 350 25px "Open sans";
   line-height: 1.8;
   color: #ff7404;
   margin: 10px 0;
 }
-.section5-bg-div .content-div{
+
+.section5-bg-div .content-div {
   width: 50%;
   height: 100%;
   padding: 15px;
   background-color: #fff;
 }
-.section5-card-div img{
+
+.section5-card-div img {
   width: 50%;
   object-fit: cover;
 }
-.section5-cards-div{
+
+.section5-cards-div {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.section5-card-div{
+
+.section5-card-div {
   display: flex;
   width: 50%;
   height: 220px;
@@ -262,18 +342,19 @@ header nav ul a:hover {
 }
 
 /*SECTION 6 STYLES*/
-.section6-bg-div{
+.section6-bg-div {
   height: 73vh;
   display: flex;
   align-items: center;
 }
-.section6-bg-div .container{
+
+.section6-bg-div .container {
   display: flex;
-  flex-direction: column;
   flex-direction: column;
   align-items: center;
 }
-.section6-bg-div .container p{
+
+.section6-bg-div .container p {
   padding-top: 100px;
   max-width: 650px;
   text-align: left;
@@ -283,71 +364,83 @@ header nav ul a:hover {
 }
 
 /*SECTION 7 STYLES*/
-.section7-bg-div{
+.section7-bg-div {
   height: 130vh;
   display: flex;
   align-items: center;
   clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0% calc(100%));
   background: #eee;
 }
-.section7-bg-div .container{
+
+.section7-bg-div .container {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 100px;
 }
-.section7-hr-title-div{
+
+.section7-hr-title-div {
   display: flex;
   flex-direction: column;
   gap: 0px;
   align-items: center;
 }
-.section7-bg-div .container .cards-div{
+
+.section7-bg-div .container .cards-div {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.section7-bg-div .container .card-div{
+
+.section7-bg-div .container .card-div {
   width: 540px;
   background-color: #fff;
   box-shadow: 0 0 22px -15px rgb(0, 0, 0);
 }
-.section7-bg-div .container img{
+
+.section7-bg-div .container img {
   width: 540px;
   height: 300px;
   object-fit: cover;
 }
-.section7-bg-div .card-div div{
+
+.section7-bg-div .card-div div {
   padding: 0 30px 30px 30px;
 }
-.section7-bg-div .card-div h4{
+
+.section7-bg-div .card-div h4 {
   font: 20px "Open Sans";
   color: #ff7404;
   text-transform: capitalize;
   margin: 25px 0 10px 0;
   width: fit-content;
-  transition:.4s;
-  &:hover{
+  transition: .4s;
+
+  &:hover {
     cursor: pointer;
     color: #8f4102;
   }
 }
-.section7-bg-div .card-div span{
+
+.section7-bg-div .card-div span {
   font: 400 13px "Open Sans";
   color: #999;
   text-transform: capitalize;
 }
-.section7-bg-div .card-div i{
+
+.section7-bg-div .card-div i {
   margin-right: 3px;
-  color:#999;
+  color: #999;
 }
-.section7-bg-div .card-div p{
+
+.section7-bg-div .card-div p {
   font: 400 15px "Open Sans";
   margin: 25px 0 20px 0;
   color: #868e96;
   line-height: 1.8;
 }
-.section7-bg-div .card-div a{
+
+.section7-bg-div .card-div a {
   font: 400 12px "Open Sans";
   background-color: #ff7404;
   color: white;
@@ -355,50 +448,57 @@ header nav ul a:hover {
   letter-spacing: 2px;
   padding: 8px 20px;
   transition: .4s;
-  &:hover{
+
+  &:hover {
     opacity: 0.7;
   }
 }
 
 /*SECTION 8 STYLES*/
-.section8-bg-div{
+.section8-bg-div {
   height: 30vh;
 }
-.section8-bg-div .container{
+
+.section8-bg-div .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-.section8-bg-div h5{
+
+.section8-bg-div h5 {
   font: bold 16px "Open Sans";
   text-transform: capitalize;
 }
-.section8-bg-div p{
+
+.section8-bg-div p {
   font: 400 15px "Open Sans";
   max-width: 500px;
   color: #868e96;
   text-align: center;
 }
-.section8-bg-div .container div{
+
+.section8-bg-div .container div {
   display: flex;
   gap: 35px;
 }
 
-.section8-bg-div input{
+.section8-bg-div input {
   outline-color: #ff7404;
   padding: 12px 20px;
-  border:1px solid;
+  border: 1px solid;
   border-color: #868e9675;
   width: 300px;
-  
+
 }
-.section8-bg-div input::placeholder{
+
+.section8-bg-div input::placeholder {
   text-transform: capitalize;
   font: 400 16px "Open Sans";
 }
-.section8-bg-div a{
+
+.section8-bg-div a {
   font: 400 12px "Open Sans";
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -409,74 +509,343 @@ header nav ul a:hover {
 
 /*FOOTER STYLES*/
 
-footer{
+footer {
   height: 75vh;
   display: flex;
   align-items: start;
   flex-direction: column;
 }
-footer .container{
+
+footer .container {
   display: flex;
   gap: 170px;
 }
-footer .container .first_two_cols_div{
+
+footer .container .first_two_cols_div {
   display: flex;
   gap: 50px;
 }
-.social_icons_div{
+
+.social_icons_div {
   margin-top: 60px;
   display: flex;
   gap: 15px;
   justify-content: space-around;
   max-width: 150px;
 }
-.social_icons_div i{
+
+.social_icons_div i {
   color: #ff7404;
   transition: .4s;
-  &:hover{
+
+  &:hover {
     color: #994703;
   }
 }
-footer h5{
+
+footer h5 {
   font: bold 17px "Open Sans";
   text-transform: capitalize;
   margin-bottom: 25px;
 }
-footer h6{
+
+footer h6 {
   font: 400 16px "Open Sans";
   text-transform: capitalize;
 }
-footer span{
+
+footer span {
   font: 400 16px "Open Sans";
   color: #868e96;
   line-height: 1.8;
 }
-.col_1{
+
+.col_1 {
   max-width: 350px;
 }
-.col_2 div{
-  margin-bottom:50px;
+
+.col_2 div {
+  margin-bottom: 50px;
 }
-.col_3 a{
+
+.col_3 a {
   font: 400 16px "Open Sans";
   color: #ff7404;
   text-transform: capitalize;
   transition: .4s;
-  &:hover{
+
+  &:hover {
     color: #853c01;
   }
 }
-.col_3 li{
+
+.col_3 li {
   margin-bottom: 15px;
 }
+
 .copy-right {
   margin: auto;
   color: #868e96;
 }
-.copy-right a{
+
+.copy-right a {
   color: #ff7404;
   transition: 0.4s;
-  &:hover{
+
+  &:hover {
     color: black;
   }
+}
+
+/* RESPONSIVE DESIGN STYLES FOR FOODY */
+@media(max-width:768px) {
+
+  /*Navbar section changes*/
+  .container {
+    width: 95%;
+  }
+
+  header {
+    width: 100%;
+    height: 165vh;
+  }
+
+  header .container {
+    width: 100%;
+  }
+
+  header nav {
+    background-color: black;
+    width: 100%;
+    padding: 30px 15px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header nav ul {
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .foody-link {
+    font: 750 26px "Open Sans";
+  }
+
+  .contact-us-link {
+    font: 12px "Open Sans";
+    padding: 7px 12px;
+  }
+
+  .header-content-div {
+    max-width: 80%;
+  }
+
+  .header-content-div h1 {
+    font: 750 65px "Open Sans";
+    margin-top: 25%;
+  }
+
+  .header-content-div p {
+    font: 300 18px "Open Sans";
+  }
+
+  .header-content-div a {
+    font: 350 14px "Open Sans";
+    letter-spacing: 1px;
+    margin-top: 12%;
+  }
+
+  /*SECTION 2 STYLE CHANGES*/
+
+  .section2-bg-div {
+    height: 110vh;
+    margin-top: -30%;
+  }
+
+  .section2-bg-div .section2-card-div{
+    width: 45%;
+  }
+  .section2-bg-div .section2-cards-div{
+    align-items: center;
+    /* text-align: center; */
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .section2-bg-div i {
+    font-size: 22px;
+  }
+
+  .section2-card-div h2 {
+    font: 500 15px "Open Sans";
+    margin: 20px 0 8px 0;
+  }
+
+  .section2-card-div p {
+    font: 400 14px "Open Sans";
+    line-height: 1.6;
+    width: 100%;
+    margin: 0 auto;
+  }
+  /*SECTION 3 STYLE CHANGES*/
+
+  .section3-bg-div {
+    height: 150vh;
+  }
+
+  .section3-bg-div .container hr,
+  .section4-bg-div hr,
+  .section5-bg-div hr,
+  .section6-bg-div hr,
+  .section7-bg-div hr {
+    width: 70px;
+    margin: 12px;
+  }
+  
+  .section3-bg-div .container h2,
+  .section4-bg-div h2,
+  .section5-bg-div h2,
+  .section6-bg-div h2,
+  .section7-bg-div h2 {
+    font: 750 40px "Open Sans";
+  }
+  
+  .section3-bg-div .container p {
+    font: 350 14px "Open Sans";
+    line-height: 1.7;
+    max-width: 60%;
+  }
+  
+  .section3-images-div {
+    width: 87%;
+    gap: 35px 35px;
+    height: 120vh;
+    margin: 0 auto;
+  }
+  
+  .section3-bg-div img {
+    max-width: 300px;
+  }
+
+  /*SECTION 4 STYLE CHANGES*/
+  .section4-bg-div{
+    height: 280vh;
+    align-items: center;
+  }
+  .section4-images-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .section4-image-div{
+    width: fit-content;
+  }
+  .section4-images-div img{
+    max-height: 500px;
+  }
+
+  /*SECTION 5 STYLE CHANGES*/
+  .section5-bg-div{
+    height: 370vh;
+    display: flex;
+    align-items: center;
+  }
+  .section5-bg-div .container {
+    height: fit-content;
+  }
+  .section5-cards-div {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .section5-bg-div .content-div h3 {
+    font: 420 17px "Open sans";
+    width: 170px;
+  }
+  
+  .section5-bg-div .content-div p {
+    font: 350 14px "Open sans";
+    line-height: 1.5;
+    margin: 8px 0;
+  }
+  
+  .section5-bg-div .content-div span {
+    font: 350 20px "Open sans";
+    line-height: 1.8;
+  }
+  .section5-card-div {
+    width: 60%;
+    height: 220px;
+  }
+
+  /* SECTION 6 STYLE CHANGES */
+  .section6-bg-div .container p {
+    padding-top: 70px;
+    max-width: 550px;
+    font: 400 18px "Open Sans";
+    line-height: 1.6;
+  }
+
+  /* SECTION 7 STYLE CHANGES */
+  .section7-bg-div{
+    height: 240vh;
+  }
+
+  .section7-bg-div .container{
+    gap: 20px;
+  }
+
+  .section7-bg-div .cards-div{
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  /*SECTION 8 STYLE CHANGES*/
+  .section8-bg-div {
+    height: 50vh;
+  }
+  .section8-bg-div .container div{
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .section8-bg-div h5 {
+    margin-top: 40px;
+  }
+
+  /*FOOTER STYLE CHANGES*/
+  footer{
+    height: 150vh;
+  }
+  footer .container{
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer div{
+    flex-direction: column;
+  }
+  
+  footer .container .first_two_cols_div {
+    gap: 40px;
+  }
+  
+  .social_icons_div {test\WEB TEMPLATES\Foody
+    margin-top: 15px;
+  }
+  
+  .col_1 {
+    max-width: 1100px;
+  }
+  
+  .col_2 div {
+    margin-bottom: 20px;
+  }
+
+  .col_3 li {
+    margin-bottom: 15px;
+  }
+  
 }
